@@ -12,35 +12,35 @@ const songThree = document.getElementById('song3')
 const songFour = document.getElementById('song4')
 const songFive = document.getElementById('song5')
 // Play Song
-function playSong1 () {
+function playSong1() {
   songOne.play()
 }
-function playSong2 () {
+function playSong2() {
   songTwo.play()
 }
-function playSong3 () {
+function playSong3() {
   songThree.play()
 }
-function playSong4 () {
+function playSong4() {
   songFour.play()
 }
-function playSong5 () {
+function playSong5() {
   songFive.play()
 }
 // Pause Song
-function pauseSong1 () {
+function pauseSong1() {
   songOne.pause()
 }
-function pauseSong2 () {
+function pauseSong2() {
   songTwo.pause()
 }
-function pauseSong3 () {
+function pauseSong3() {
   songThree.pause()
 }
-function pauseSong4 () {
+function pauseSong4() {
   songFour.pause()
 }
-function pauseSong5 () {
+function pauseSong5() {
   songFive.pause()
 }
 // Questions None
@@ -230,7 +230,7 @@ function incorrect4 () {
   document.getElementById('answer7').innerHTML = 'Try again.'
   document.body.style.backgroundColor = 'red'
 }
-function hintFour( ) {
+function hintFour () {
   document.getElementById('fourhint').style.display = 'block'
 }
 // Question 8
