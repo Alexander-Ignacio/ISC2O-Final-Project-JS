@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Classical Music Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Classical Music Guessing Game</h1>
+    <div id="instructions">
+      <p>Welcome to my first <b>Classical Music Guessing Game</b>! In this game, there are ten questions relating to classical music. There will be two types of questions: guessing the names of some classical pieces or guessing the names of classical composers! For the typing questions, please make sure to properly capitalize! Are you ready to begin? <b>(Warning: You may want to turn down your volume a bit.)</b></p>
+      <button class="center" id="begin">Start!</button>
+      <table class="center">
+        <td>
+          <tr>
+            <img src="./images/treble.png" alt="Treble Clef" style="width:550px;height:850px">
+          </tr>
+          <tr>
+            <img src="./images/bass.png" alt="Bass Clef" style="width:450px;height:650px">
+          </tr>
+        </td>
+      </table>
+    </div>
+    <div id="question1">
+    <button class="center" onclick="playSong1()" type="button">Play Song</button>
+    <button class="center" onclick="pauseSong1()" type="button">Pause Song</button> 
+      <br>
+      <p style="text-align:center" id="answer1"></p>
+      <br>
+      <button id="101" class="center">Flight of the Bumblebee</button>
+      <br>
+      <button id="102" class="center">Cello Suite No. 1 in G major</button>
+      <br>
+      <br>
+      <button class="center" id="hint1">Hint?</button>
+      <img class="center" id="onehint" src="./images/bee.png" alt="Hint 1">
+      <br>
+      <button class="center" onclick="pauseSong1()" id="next1">Next question!</button>
+    </div>
+    <div id="question2">
+      <br>
+      <br>
+      <p style="text-align:center" id="2answer"></p>
+      <input class="center" type="text" id="input1">
+      <button class="center" id="2">What's my name?</button>
+      <br>
+      <img class="center" id="vivaldi" src="./images/Vivaldi.jpg" alt="Composer #1">
+      <br>
+      <button class="center" id="next2">Next question!</button>
+    </div>
+    <div id="question3">
+      <button class="center" onclick="playSong2()" type="button">Play Song</button>
+    <button class="center" onclick="pauseSong2()" type="button">Pause Song</button> 
+      <br>
+      <p style="text-align:center" id="answer3"></p>
+      <br>
+      <button id="301" class="center">Étude Op. 25, No. 11 "Winter Wind"</button>
+      <br>
+      <button id="302" class="center">Violin Sonata No. 9 "Kreutzer"</button>
+      <br>
+      <br>
+      <button class="center" id="hint2">Hint?</button>
+      <img class="center" id="twohint" src="./images/violin.png" alt="Hint 2" style="width:500px;height:500px">
+      <br>
+      <button class="center" onclick="pauseSong2()" id="next3">Next question!</button>
+    </div>
+    <div id="question4">
+      <br>
+      <br>
+      <p style="text-align:center" id="4answer"></p>
+      <input class="center" type="text" id="input2">
+      <button class="center" id="4">What's my name?</button>
+      <br>
+      <img class="center" id="mozart" src="./images/mozart.jpg" alt="Composer #2" style="width:200px;height:240px">
+      <br>
+      <button class="center" id="next4">Next question!</button>
+    </div>
+    <div id="question5">
+      <button class="center" onclick="playSong3()" type="button">Play Song</button>
+     <button class="center" onclick="pauseSong3()" type="button">Pause Song</button> 
+      <br>
+      <p style="text-align:center" id="answer5"></p>
+      <br>
+      <button id="501" class="center">Ballade No. 1 Op. 23 in G minor</button>
+      <br>
+      <button id="502" class="center">Moonlight Sonata (Third Movement)</button>
+      <br>
+      <br>
+      <button class="center" id="hint3">Hint?</button>
+      <img class="center" id="threehint" src="./images/moon.png" alt="Hint 3" style="width:500px;height:500px">
+      <br>
+      <button class="center" onclick="pauseSong3()" id="next5">Next question!</button>
+    </div>
+    <div id="question6">
+      <br>
+      <br>
+      <p style="text-align:center" id="6answer"></p>
+      <input class="center" type="text" id="input3">
+      <button class="center" id="6">What's my name?</button>
+      <br>
+      <img class="center" id="beethoven" src="./images/beethoven.jpg" alt="Composer #3" style="width:200px;height:240px">
+      <br>
+      <button class="center" id="next6">Next question!</button>
+    </div>
+    <div id="question7">
+      <button class="center" onclick="playSong4()" type="button">Play Song</button>
+      <button class="center" onclick="pauseSong4()" type="button">Pause Song</button> 
+      <br>
+      <p style="text-align:center" id="answer7"></p>
+      <br>
+      <button id="701" class="center">Kreisler - Liebeslied (Love's Sorrow) (Rachmaninoff arr.)</button>
+      <br>
+      <button id="702" class="center">Introduction and Rondo Capriccioso</button>
+      <br>
+      <br>
+      <button class="center" id="hint4">Hint?</button>
+      <img class="center" id="fourhint" src="./images/brokenheart.png" alt="Hint 4" style="width:500px;height:500px">
+      <br>
+      <button class="center" onclick="pauseSong4()" id="next7">Next question!</button>
+    </div>
+    <div id="question8">
+      <br>
+      <br>
+      <p style="text-align:center" id="8answer"></p>
+      <input class="center" type="text" id="input4">
+      <button class="center" id="8">What's my name?</button>
+      <br>
+      <img class="center" id="bach" src="./images/bach.jpg" alt="Composer #4" style="width:200px;height:240px">
+      <br>
+      <button class="center" id="next8">Next question!</button>
+    </div>
+    <div id="question9">
+      <button class="center" onclick="playSong5()" type="button">Play Song</button>
+      <button class="center" onclick="pauseSong5()" type="button">Pause Song</button> 
+      <br>
+      <p style="text-align:center" id="answer9"></p>
+      <br>
+      <button id="901" class="center">Four Seasons - Winter</button>
+      <br>
+      <button id="902" class="center">Étude Op. 25, No. 11 "Winter Wind"</button>
+      <br>
+      <br>
+      <button class="center" id="hint5">Hint?</button>
+      <img class="center" id="fivehint" src="./images/fourseasons.png" alt="Hint 5" style="width:500px;height:500px">
+      <br>
+      <button class="center" onclick="pauseSong5()" id="next9">Next question!</button>
+    </div>
+    <div id="question10">
+      <img class="center" id="chopin" src="./images/chopin.jpg" alt="Composer #4" style="width:200px;height:240px">
+      <br>
+      <button id="last-question" class="center">Click for final question</button>
+      <br>
+      <button class="center" id="finish">Finish</button>
+    </div>
+    <div id="finish1">
+      <h1 class="center">Thanks for playing!</h1>
+    <audio id="song1">
+      <source src="./audio/bumblebee.mp3" type="audio/mp3">
+    </audio>
+    <audio id="song2">
+      <source src="./audio/kreutzer.mp3" type="audio/mp3">
+    </audio>
+    <audio id="song3">
+      <source src="./audio/moonlight.mp3" type="audio/mp3">
+    </audio>
+    <audio id="song4">
+      <source src="./audio/liebeslied.mp3" type="audio/mp3">
+    </audio>
+    <audio id="song5">
+      <source src="./audio/fourseasons.mp3" type="audio/mp3">
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>
